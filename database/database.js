@@ -9,8 +9,11 @@
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
+const server = '127.0.0.1:27017'; // REPLACE WITH YOUR DB SERVER
+const database = 'gaim-bot';      // REPLACE WITH YOUR DB NAME
+
 //connection string
-const connectionString = "";
+const connectionString = `mongodb://${server}/${database}`;
 
 //connect to the database
 mongoose.connect(connectionString).then((data) => {
