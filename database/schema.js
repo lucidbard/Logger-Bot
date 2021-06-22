@@ -19,6 +19,18 @@ const MessageSchema = new Schema({
         type: String,
         required: true
     },
+    content: {
+        type: String,
+        required: true
+    },
+    createdTimestamp: {
+        type: Number,
+        required: true
+    },
+    guild: {
+        type: String,
+        required: true
+    },
     msgCount: {
         type: Number,
         required: true
